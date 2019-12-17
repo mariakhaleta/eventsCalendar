@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTextArea?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddEventController">
+  <children>
+    <JFXButton fx:id="addButton" layoutX="56.0" layoutY="399.0" onAction="#handleAdd" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #1aeacb;" text="Добавить" />
+    <JFXButton fx:id="backButton" layoutX="327.0" layoutY="399.0" onAction="#handleCancel" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #ff6067;" text="Назад" />
+    <Label layoutX="44.0" layoutY="176.0" text=" Дата события" />
+    <DatePicker fx:id="meetData" layoutX="167.0" layoutY="171.0" />
+    <JFXTextField fx:id="meetTitle" focusColor="#1143da" layoutX="46.0" layoutY="112.0" prefHeight="35.0" prefWidth="510.0" promptText="Название события" />
+      <JFXTextField fx:id="meetPlace" layoutX="45.0" layoutY="268.0" prefHeight="35.0" prefWidth="510.0" promptText="Место события" />
+      <Label layoutX="46.0" layoutY="230.0" text="Важность" />
+      <ChoiceBox fx:id="meetImportantChoice" layoutX="167.0" layoutY="225.0" prefHeight="27.0" prefWidth="194.0" />
+      <ChoiceBox fx:id="meetTag" layoutX="167.0" layoutY="337.0" prefHeight="27.0" prefWidth="194.0" />
+      <Label layoutX="44.0" layoutY="342.0" text="Tag" />
+      <Label layoutX="137.0" layoutY="37.0" text="Создание события " textFill="#9a18f0">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+  </children>
+</AnchorPane>

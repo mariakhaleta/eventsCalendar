@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="calendarPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <children>
+    <TableView fx:id="eventsTable" layoutY="529.0" prefHeight="271.0" prefWidth="800.0">
+      <columns>
+        <TableColumn fx:id="eventsTitle" prefWidth="211.44116735458374" text="Название" />
+        <TableColumn fx:id="eventsData" prefWidth="151.04322814941406" text="Дата" />
+        <TableColumn fx:id="eventsPlace" prefWidth="206.95669555664062" text="Место" />
+        <TableColumn fx:id="eventsTag" prefWidth="107.7752685546875" text="Tag" />
+        <TableColumn fx:id="eventsImportance" prefWidth="126.292724609375" text="Важность" />
+      </columns>
+    </TableView>
+    <JFXButton fx:id="addEventButton" layoutX="187.0" layoutY="481.0" onAction="#handleNewEvent" prefHeight="29.0" prefWidth="181.0" style="-fx-background-color: #199335;" text="Создать новое событие" textFill="WHITE" />
+    <JFXButton fx:id="deleteEventButton" layoutX="395.0" layoutY="480.0" onAction="#handleDeleteEvent" prefHeight="29.0" prefWidth="181.0" style="-fx-background-color: #b50f0f;" text="Удалить событие" textFill="WHITE" />
+    <Label layoutX="13.0" layoutY="483.0" text="Все события ">
+      <font>
+        <Font size="24.0" />
+      </font>
+    </Label>
+    <JFXTextField fx:id="filterEventField" layoutX="623.0" layoutY="480.0" promptText="Найти по названию" />
+  </children>
+</Pane>
